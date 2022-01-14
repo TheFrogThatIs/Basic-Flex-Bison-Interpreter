@@ -1,0 +1,16 @@
+-- Function with Type Narrowing
+
+function test4 a: integer, b: boolean, c: real returns integer;
+	x: boolean is (true or false);
+
+	y: real is 7; -- Widening
+
+	z: integer is 3.2; -- Narrowing
+
+	v: real is 2; -- Widening
+
+	w: integer is 3.14159; -- Narrowing
+		
+begin
+    	5;
+end;

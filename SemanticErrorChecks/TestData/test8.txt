@@ -1,0 +1,7 @@
+-- Function with Boolean Expression with Arithmetic Operator
+
+function test8 returns integer;
+	b: boolean is false;
+begin
+    (true and false) - (1 + b);
+end;

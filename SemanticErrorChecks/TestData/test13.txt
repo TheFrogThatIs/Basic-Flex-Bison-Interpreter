@@ -1,0 +1,15 @@
+-- Function with Undeclared Variables
+
+function test13 a: integer returns integer;
+	b: integer 2;
+	c: real is 2.75 - 2 + 8.;
+	d: boolean is 7 = f; -- Undeclared Variable
+	e: real is (17 - z); -- Undeclared Variable
+	f: integer is (q ** 2); -- Undeclared Variable
+begin
+	case b is
+		when 1 => 4.5;
+		when 2 => c;
+		others => 3.14159265;
+	endcase;
+end;

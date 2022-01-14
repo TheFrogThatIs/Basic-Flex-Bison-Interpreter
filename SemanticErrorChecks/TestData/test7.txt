@@ -1,0 +1,18 @@
+-- Function with Duplicate Initialization
+
+function test4 a: integer, b: boolean, c: real returns integer;
+	x: boolean is (true or false);
+
+	y: real is 7;
+
+	b: integer is 7; -- Duplicate
+
+	v: real is 2.123; 
+
+	x: integer is 3; -- Duplicate
+
+	y: boolean is true;
+		
+begin
+    	5;
+end;

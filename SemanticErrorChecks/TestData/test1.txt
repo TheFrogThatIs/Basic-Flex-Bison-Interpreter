@@ -1,0 +1,6 @@
+-- Function with Semantic Remainder Error
+
+function test1 returns integer;
+begin
+    (2 + 2.3) rem 2;
+end;

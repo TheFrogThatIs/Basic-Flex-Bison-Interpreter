@@ -1,0 +1,19 @@
+-- Function with Case Types that Don't Match
+
+function test3 returns integer;
+	z: integer is (5 + 2 * 1);
+	b: real is 7.287;
+	c: real is (7.22 ** 8);
+	
+begin
+    	case ( z ) is
+	   when 1 => b;
+	   when 2 => b;
+	   when 3 => c;
+	   when 4 => b;
+	   when 5 => z;
+	   when 6 => b;
+	   when 7 => c;
+	   others => 3.14159265;
+	endcase;
+end;

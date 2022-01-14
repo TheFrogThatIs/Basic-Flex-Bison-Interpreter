@@ -1,0 +1,16 @@
+-- Test 1, Valid
+	-- All Literal Types, IDENTIFIER
+	-- No Variables, No Parameters
+	-- Reduce with ADDOP, Multiple statements
+
+function test1 returns integer;
+	-- No Variables
+begin
+	reduce +
+	   2 + 8 ** 2 * 2;
+	   6.03685947;
+	   true;
+	   false; 
+	   3.;
+	endreduce;
+end;

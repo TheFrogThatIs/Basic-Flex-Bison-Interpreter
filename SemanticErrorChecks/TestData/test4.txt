@@ -1,0 +1,24 @@
+-- Function with Non-Boolean If-Condition
+
+function test4 a: integer, b: boolean, c: real returns integer;
+	x: boolean is if (a <= 10) then
+		b;
+	else
+		false;
+	endif;
+
+	y: real is 7.287;
+
+	z: integer is if (b) then
+		a;
+	else
+		137 + 22 - 7 * 3;
+	endif;
+	
+begin
+    	if (1738) then
+		b;
+	else
+		false;
+	endif;
+end;

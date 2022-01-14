@@ -1,0 +1,7 @@
+-- Function with Arithmetic Expression with Logical Operator
+
+function test10 a: integer returns integer;
+	b: boolean is false;
+begin
+	((a + 7.32) - 10.9) + b;
+end;

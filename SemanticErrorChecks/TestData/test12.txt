@@ -1,0 +1,11 @@
+-- Function with Variable Initialization Mismatch
+
+function test12 returns integer;
+	a: boolean is 1;
+	b: boolean is 0;
+	c: integer is true;
+	d: real is (false and true);
+	e: integer is 3.14159;
+begin
+    1;
+end;

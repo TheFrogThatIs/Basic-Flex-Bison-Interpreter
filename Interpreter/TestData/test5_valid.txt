@@ -1,0 +1,14 @@
+-- Test 5, Valid
+	-- Used to Depict Command-Line Argument Errors
+
+function test1 a: integer, b: real, c: boolean, d: real, e: integer returns integer;
+	-- No Variables
+begin
+	reduce +
+	   a;
+	   b;
+	   c;
+	   d; 
+	   e;
+	endreduce;
+end;

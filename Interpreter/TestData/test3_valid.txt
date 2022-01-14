@@ -1,0 +1,30 @@
+-- Test 3, Valid
+	-- Three Variables, Three Parameters
+	-- Arithmetic Operators: ADD, SUBTRACT, DIVIDE, REMAINDER
+	-- Relational Operators: LESSOREQUAL, GREATER, EQUAL, NOTEQUAL
+	-- Conditional: If-Then-Else
+
+function test3 a: integer, b: real, c: real returns real;
+	-- 3 Variables
+	x: integer is (a - 5) + (b / 2) + (20 rem c);
+	y: real is (a <= b) and (a = b) and (a /= c) and (a > 0);
+	z: real is a + b ** c;
+begin
+
+	if z > 100 then
+		if (y = 0) then
+			z;
+		else 
+			y;
+		endif;
+	else
+		reduce +
+			a;
+			b;
+			c;
+			x;
+			y;
+			z;
+		endreduce;
+	endif;
+end;

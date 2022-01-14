@@ -1,0 +1,21 @@
+-- Function with Reductions Containing Non-Numeric Types
+
+function test11 a: integer, b: real returns integer;
+	c: boolean is false;
+	d: integer is reduce *
+			true;
+			2;
+			3;
+			5;
+		    endreduce;
+begin
+    reduce + 
+	1;
+	2;
+	3;
+	4;
+	a;
+	b;
+	c;
+    endreduce;
+end;
